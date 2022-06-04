@@ -6,7 +6,7 @@ final class InClosure
 {
     public function run($value)
     {
-        return (static function (mixed $default) : mixed {
+        return (static function (mixed $default): mixed {
             $default = self::getValue($default);
             return match (true) {
                 is_string($default) => sprintf('"%s"', $default),
@@ -28,7 +28,7 @@ final class InClosure
 {
     public function run($value)
     {
-        return (static function (mixed $default) : mixed {
+        return (static function (mixed $default): mixed {
             $default = self::getValue($default);
             switch (true) {
                 case is_string($default):

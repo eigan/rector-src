@@ -1,6 +1,6 @@
 <?php
 
-function (array $array) : bool {
+function (array $array): bool {
     if (function_exists('array_is_list')) {
         return array_is_list($array);
     }

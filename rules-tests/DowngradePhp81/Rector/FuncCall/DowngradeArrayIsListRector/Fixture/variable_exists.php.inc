@@ -12,7 +12,7 @@ array_is_list([1 => 'apple', 'orange']);
 namespace Rector\Tests\DowngradePhp81\Rector\FuncCall\DowngradeArrayIsListRector\Fixture;
 
 $arrayIsList = false;
-$arrayIsList2 = function (array $array) : bool {
+$arrayIsList2 = function (array $array): bool {
     if (function_exists('array_is_list')) {
         return array_is_list($array);
     }
