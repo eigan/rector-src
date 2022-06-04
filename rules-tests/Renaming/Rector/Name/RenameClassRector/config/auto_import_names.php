@@ -15,5 +15,6 @@ return static function (RectorConfig $rectorConfig): void {
     $rectorConfig->ruleWithConfiguration(RenameClassRector::class, [
         OldClass::class => NewClass::class,
         SomeServiceClassFirstNamespace::class => SomeServiceClass::class,
+        \Queue::class => \Illuminate\Support\Facades\Queue::class,
     ]);
 };
